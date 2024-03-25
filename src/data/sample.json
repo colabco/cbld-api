@@ -1,0 +1,152 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "Artemis",
+      "description": "The Artemis program is a Moon exploration program led by NASA and its partners, including ESA, JAXA, DLR, ASI, ISA, and CSA. It was established in 2017 with the goal of establishing a permanent base on the Moon to facilitate human missions to Mars",
+      "approxDuration": "3 months"
+    },
+    {
+      "id": "2",
+      "name": "Apollo",
+      "description": "Project Apollo was a comprehensive space program led by NASA and the United States government, aimed at achieving the goal of landing a man on the moon and returning him safely to Earth before the end of the 1960s",
+      "approxDuration": "5 months"
+    },
+    {
+      "id": "3",
+      "name": "Rocket to Mars",
+      "description": "We are going to Mars! is the fourth planet from the Sun and is the second-smallest planet in the Solar System, being larger than only Mercury. In the English language, Mars is named for the Roman god of war.",
+      "approxDuration": "10 years"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "John Doe",
+      "email": "john@doe.com",
+      "appRole": "admin",
+      "projectsOwned": [1],
+      "targetIndustryRoles": ["CTO", "Lead Engineer"]
+    },
+    {
+      "id": "2",
+      "username": "Jane Smith",
+      "email": "jane@smith.com",
+      "appRole": "user",
+      "projectsOwned": [],
+      "targetIndustryRoles": ["QA Analyst"]
+    },
+    {
+      "id": "3",
+      "name": "Bob Johnson",
+      "email": "bob@johnson.com",
+      "appRole": "user",
+      "projectsOwned": [2, 3],
+      "targetIndustryRoles": ["Lead Engineer", "Fullstack Developer"]
+    },
+    {
+      "id": "4",
+      "name": "Alice Williams",
+      "email": "alice@williams.com",
+      "appRole": "user",
+      "projectsOwned": [],
+      "targetIndustryRoles": ["Data Engineer", "Machine Learning Engineer"]
+    },
+    {
+      "id": "5",
+      "name": "Charlie Brown",
+      "email": "charlie@brown.com",
+      "appRole": "user",
+      "projectsOwned": [],
+      "targetIndustryRoles": ["Product Manager"]
+    }
+  ],
+  "IndustryRoles": [
+    {
+      "id": "1",
+      "name": "CTO",
+      "description": "Chief Technology Officer",
+      "coreSkills": ["Research & Innovation Management", "Cloud Architecture Design"]
+    },
+    {
+      "id": "2",
+      "name": "QA Analyst",
+      "description": "Assure the quality of delivered solutions",
+      "coreSkills": ["Testing", "Test Planning & Management", "Issues Management"]
+    },
+    {
+      "id": "3",
+      "name": "Lead Engineer",
+      "description": "Leading engineering teams to success",
+      "coreSkills": ["Task Planning & Management", "Test Planning & Management", "Resource Planning & Management", "Cloud Architecture Design"]
+    },
+    {
+      "id": "4",
+      "name": "Fullstack Developer",
+      "description": "Implementation of all tiers of application software",
+      "coreSkills": ["Task Planning & Management", "Issue Investigation & Resolution", "Managing Design Assets", "Navigate Collaborative Design Tools", "API Services Implementation", "Web/UX Services Implementation",  "Basic Data Modeling", "Database Access Layer Implementation", "CI/CD Pipeline Implementation"]
+    },
+    {
+      "id": "5",
+      "name": "Frontend Developer",
+      "description": "Implementation of user-facing applications",
+      "coreSkills": ["Task Planning & Management", "Web/UX Services Implementation", "Managing Design Assets", "Navigate Collaborative Design Tools"]
+    },
+    {
+      "id": "6",
+      "name": "Backend Developer",
+      "description": "Implementation of application backend resources & services",
+      "coreSkills": ["Task Planning & Management", "API Services Implementation", "Basic Data Modeling", "Database Access Layer Implementation", "CI/CD Pipeline Implementation"]
+    },
+    {
+      "id": "8",
+      "name": "Cloud DevOPs Engineer",
+      "description": "Deployment & operation of application resources",
+      "coreSkills": ["Task Planning & Management", "CI/CD Pipeline Implementation", "Cloud Infrastructure & Services Provisioning", "Backup & Recovery Procedures", "Security Procedures", "Cloud Architecture Design"]
+    },
+    {
+      "id": "9",
+      "name": "Data Scientist",
+      "description": "Answering business/organisational questions with data",
+      "coreSkills": ["Task Planning & Management", "Data Querying & Analysis", "Data Visualization & Reporting"]
+    },
+    {
+      "id": "10",
+      "name": "Data Engineer",
+      "description": "Implementation of data ingestion, processing, and storage",
+      "coreSkills": ["Task Planning & Management", "Data Processing & Stream Processing", "Data Storage", "Data Querying & Analysis", "Data Modeling"]
+    },
+    {
+      "id": "11",
+      "name": "Machine Learning Engineer",
+      "description": "Implementation of ML models & services",
+      "coreSkills": ["Task Planning & Management", "Machine Learning", "Deep Learning", "Data Querying & Analysis"]
+    },
+    {
+      "id": "12",
+      "name": "Product Manager",
+      "description": "Product management & product-led decision making",
+      "coreSkills": ["Task Planning & Management", "Product Features Management & Roadmapping", "Product Testing & Feedback Management"]
+    }
+  ],
+  "coreSkills": [
+    "Research & Innovation Management",
+    "Cloud Architecture Design",
+    "Task Planning & Management",
+    "Test Planning & Management",
+    "Resource Planning & Management",
+    "Issues Management",
+    "Data Querying & Analysis",
+    "Data Visualization & Reporting",
+    "Data Processing & Stream Processing",
+    "Data Storage",
+    "Data Modeling",
+    "Database Access Layer Implementation",
+    "CI/CD Pipeline Implementation",
+    "Cloud Infrastructure & Services Provisioning",
+    "Backup & Recovery Procedures",
+    "Security Procedures",
+    "Product Features Management & Roadmapping",
+    "Product Testing & Feedback Management"
+  ]
+}
