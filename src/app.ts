@@ -9,7 +9,7 @@ const options: AppOptions = {}
 const app: FastifyPluginAsync<AppOptions> = async (fastify, opts): Promise<void> => {
   // Place here your custom code!
   const apiSpecs = join(__dirname, 'api-specs')
-  const yamlSpec = `${apiSpecs}/temp-projects.yaml`
+  const yamlSpec = join(apiSpecs, 'temp-projects.yaml')
 
   // see: https://github.com/fastify/fastify-swagger#static
   void fastify.register(require('@fastify/swagger'), {

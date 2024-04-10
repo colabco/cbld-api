@@ -7,14 +7,6 @@
     "strictPropertyInitialization": false,
     "baseUrl": "src",
     "emitDecoratorMetadata": true,
-    "paths": {
-      "@entity/*": ["entity/*"],
-      "@controllers/*": ["controllers/*"]
-    }
-  },
-  "tsc-alias": {
-    "verbose": false,
-    "resolveFullPaths": true
   },
   "include": ["src/**/*.ts", "src"],
   "assets":["src/api-specs/*"]
