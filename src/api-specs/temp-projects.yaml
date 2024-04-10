@@ -1,0 +1,114 @@
+openapi: '3.0.2'
+info:
+  title: TEMP Projects API
+  version: '1.0'
+servers:
+  - url: http://localhost:3000/v0/
+paths:
+  /projects:
+    get:
+      operationId: getProjects,
+      summary: Get all projects
+      description: Get all projects across the entire platform
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProjectListResponse'
+  /projects/owned-by/{userId}:
+    get:
+      operationId: getProjectsOwnedByUser,
+      summary: Get all projects owned by user
+      description: Get all projects across the entire platform owned by the given user
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProjectListResponse'
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        description: the userId for the project owner
+        schema:
+          type: string
+  /projects/with-member/{userId}:
+    get:
+      operationId: getProjectsWithMember,
+      summary: Get all projects that user is member of
+      description: Get all projects across the entire platform that the given user is a member of
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProjectListResponse'
+      parameters:
+      - name: userId
+        in: path
+        required: true
+        description: the userId for the user participating in the project
+        schema:
+          type: string
+  /projects/{projectId}:
+    get:
+      operationId: getProjectById,
+      summary: Get specific project
+      description: Get the project with the given projectId
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProjectResponse'
+      parameters:
+      - name: projectId
+        in: path
+        required: true
+        description: the projectId of the project to retrieve
+        schema:
+          type: string
+components:
+  schemas:
+    ProjectResponse:
+      type: object
+      required:
+        - project
+      properties:
+        project:
+          $ref: "#/components/schemas/Project"
+    ProjectListResponse:
+      type: object
+      required:
+        - projects
+      properties:
+        projects:
+          type: array
+          maxItems: 10
+          items:
+            $ref: "#/components/schemas/Project"
+    Project:
+      type: object
+      required:
+        - id
+        - name
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        approxDuration:
+          type: string
+    Projects:
+      type: array
+      maxItems: 10
+      items:
+        $ref: "#/components/schemas/Project"

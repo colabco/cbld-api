@@ -1,19 +1,40 @@
-import { join } from 'path';
-import AutoLoad, {AutoloadPluginOptions} from '@fastify/autoload';
-import { FastifyPluginAsync, FastifyServerOptions } from 'fastify';
+import { join } from 'path'
+import AutoLoad, { AutoloadPluginOptions } from '@fastify/autoload'
+import { FastifyPluginAsync, FastifyServerOptions } from 'fastify'
 
-export interface AppOptions extends FastifyServerOptions, Partial<AutoloadPluginOptions> {
-
-}
+export interface AppOptions extends FastifyServerOptions, Partial<AutoloadPluginOptions> {}
 // Pass --options via CLI arguments in command to enable these options.
-const options: AppOptions = {
-}
+const options: AppOptions = {}
 
-const app: FastifyPluginAsync<AppOptions> = async (
-    fastify,
-    opts
-): Promise<void> => {
+const app: FastifyPluginAsync<AppOptions> = async (fastify, opts): Promise<void> => {
   // Place here your custom code!
+  const apiSpecs = join(__dirname, 'api-specs')
+  const yamlSpec = `${apiSpecs}/temp-projects.yaml`
+
+  // see: https://github.com/fastify/fastify-swagger#static
+  void fastify.register(require('@fastify/swagger'), {
+    info: {
+      title: 'Cobuilders API',
+      description: 'Swagger API docs for the Cobuilders API',
+      version: '0.1',
+    },
+    mode: 'static',
+    specification: {
+      path: yamlSpec,
+    },
+    host: 'localhost',
+    schemes: ['http', 'https'],
+    consumes: ['application/json'],
+    produces: ['application/json'],
+    exposeRoute: true,
+  })
+
+  void fastify.register(require('@scalar/fastify-api-reference'), {
+    routePrefix: '/docs',
+    configuration: {
+      spec: () => (fastify as any).swagger(),
+    },
+  })
 
   // Do not touch the following lines
 
@@ -22,17 +43,16 @@ const app: FastifyPluginAsync<AppOptions> = async (
   // through your application
   void fastify.register(AutoLoad, {
     dir: join(__dirname, 'plugins'),
-    options: opts
+    options: opts,
   })
 
   // This loads all plugins defined in routes
   // define your routes in one of these
   void fastify.register(AutoLoad, {
     dir: join(__dirname, 'routes'),
-    options: opts
+    options: opts,
   })
+}
 
-};
-
-export default app;
+export default app
 export { app, options }
