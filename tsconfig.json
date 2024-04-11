@@ -2,7 +2,12 @@
   "extends": "fastify-tsconfig",
   "compilerOptions": {
     "outDir": "dist",
-    "sourceMap": true
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": "src",
+    "emitDecoratorMetadata": true,
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts", "src"],
+  "assets":["src/api-specs/*"]
 }
