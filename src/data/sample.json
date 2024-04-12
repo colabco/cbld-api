@@ -330,42 +330,42 @@
         "id": "1",
         "name": "Machine Learning & AI",
         "description": "Interest group focused on Machine Learning and Artificial Intelligence technologies.",
-        "dateCreated": "2024-04-11T12:00:00Z",
+        "createdAt": "2024-04-11T12:00:00Z",
         "updatedAt": "2024-04-11T12:00:00Z"
       },
       {
         "id": "2",
         "name": "Infrastructure, DevOps & Cloud Engineering",
         "description": "Interest group covering Infrastructure, DevOps practices, and Cloud Engineering solutions.",
-        "dateCreated": "2024-04-11T12:00:00Z",
+        "createdAt": "2024-04-11T12:00:00Z",
         "updatedAt": "2024-04-11T12:00:00Z"
       },
       {
         "id": "3",
         "name": "Data Science & Data Engineering",
         "description": "Interest group dedicated to Data Science and Data Engineering disciplines.",
-        "dateCreated": "2024-04-11T12:00:00Z",
+        "createdAt": "2024-04-11T12:00:00Z",
         "updatedAt": "2024-04-11T12:00:00Z"
       },
       {
         "id": "4",
         "name": "Database Architecture & Data Modeling",
         "description": "Interest group focusing on Database Architecture and Data Modeling techniques.",
-        "dateCreated": "2024-04-11T12:00:00Z",
+        "createdAt": "2024-04-11T12:00:00Z",
         "updatedAt": "2024-04-11T12:00:00Z"
       },
       {
         "id": "5",
         "name": "Graphic Design & Corporate Identity",
         "description": "Interest group centered around Graphic Design principles and Corporate Identity strategies.",
-        "dateCreated": "2024-04-11T12:00:00Z",
+        "createdAt": "2024-04-11T12:00:00Z",
         "updatedAt": "2024-04-11T12:00:00Z"
       },
       {
         "id": "6",
         "name": "User Interface Design & Experience Design",
         "description": "Interest group specializing in User Interface Design and User Experience Design methodologies.",
-        "dateCreated": "2024-04-11T12:00:00Z",
+        "createdAt": "2024-04-11T12:00:00Z",
         "updatedAt": "2024-04-11T12:00:00Z"
       }
     ],
@@ -375,21 +375,21 @@
         "sender": "1",
         "interestGroups": "1",
         "content": "Hello everyone! Let's discuss latest trends in ML & AI.",
-        "timestamp": "2024-04-11T12:00:00Z"
+        "createdAt": "2024-04-11T12:00:00Z"
       },
       {
         "id": "2",
         "sender": "2",
         "interestGroups": "1",
         "content": "Agreed! I'm particularly interested in natural language processing.",
-        "timestamp": "2024-04-11T12:05:00Z"
+        "createdAt": "2024-04-11T12:05:00Z"
       },
       {
         "id": "3",
         "sender": "3",
         "interestGroups": "2",
         "content": "Hey folks! Anyone working on Kubernetes deployments?",
-        "timestamp": "2024-04-11T12:10:00Z"
+        "createdAt": "2024-04-11T12:10:00Z"
       }
     ]
 }
