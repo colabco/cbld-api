@@ -3,7 +3,7 @@ info:
   title: TEMP Projects API
   version: '1.0'
 servers:
-  - url: http://localhost:3000/v0/
+  - url: http://localhost:3000/v0
 paths:
   /projects:
     get:
