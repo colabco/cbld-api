@@ -32,6 +32,13 @@ After cloning this repository:
 - click on the link offered by git cli to open a new PR in your browser (Or, login to github, find the branch you just pushed, and create a new PR for it).
 - once the PR is merged, you can delete the branch you created.
 
+# Fastify CLI
+
+Note that this repo contains [fastify-cli](https://github.com/fastify/fastify-cli), which is a CLI for fastify. It is installed when you run `pnpm install`.
+You can feed it a fastify plugin file **_and it will run the server for you._**.
+The majority of commands in `package.json` are therefore fastify-cli commands that are simply fed the api app in `src/app.ts`.
+The **actual** server is in the `src/server.ts` file. This is what will run the api app when fastify-cli isn't around to run it.
+
 ## Learn More
 
 To learn Fastify, check out the [Fastify documentation](https://fastify.dev/docs/latest/).
