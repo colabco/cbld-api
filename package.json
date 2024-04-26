@@ -8,7 +8,7 @@
   },
   "scripts": {
     "clean": "rm -rf dist",
-    "test": "pnpm run build && tsc -p test/tsconfig.json && c8 node --test -r ts-node/register test/**/*.ts",
+    "test": "pnpm run build && tsc -p test/tsconfig.json && c8 node --test -r ts-node/register \"test/**/*.ts\"",
     "copy": "mkdir -p dist/api-specs && cp -r src/api-specs/* dist/api-specs/",
     "build": "pnpm run copy && tsc",
     "build:dev": "pnpm run copy && tsc --incremental",

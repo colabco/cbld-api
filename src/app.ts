@@ -45,6 +45,10 @@ const app: FastifyPluginAsync<AppOptions> = async (fastify, opts): Promise<void>
     },
   })
 
+  void fastify.setNotFoundHandler((_request, reply) => {
+    reply.code(404).type('text/html').send('Not Found')
+  })
+
   // Do not touch the following lines
 
   // This loads all plugins defined in plugins

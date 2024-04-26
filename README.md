@@ -24,6 +24,8 @@ After cloning this repository:
 
 - create a local branch for the ticket you are working on. **All tasks must have a corresponding ticket.**:
   - e.g. `git checkout -b feature/23-add-login-route` (for a ticket with id 23). If it's a bug, do something like `git checkout bug/23-fix-login-route` instead.
+- If working on new/changed routes, ensure the corresponding tests are added updated in `/tests`. (See the [Test Cycle](#test-cycle) section below for more details)
+- run tests to make sure tests are passing: `pnmp test`.
 - commit your changes locally, e.g.:
 - `git add .`
 - `git commit -m "I added the new login route"`
@@ -31,6 +33,12 @@ After cloning this repository:
 - `git push origin feature/23-add-login-route`
 - click on the link offered by git cli to open a new PR in your browser (Or, login to github, find the branch you just pushed, and create a new PR for it).
 - once the PR is merged, you can delete the branch you created.
+
+# Test Cycle
+
+- The test coverage tool is **[c8](https://github.com/bcoe/c8)**.
+- Test execution can use **[node:test](https://nodejs.org/api/test.html#test-runner)** and **[node:assert](https://nodejs.org/api/assert/assert)** as the assertion library.
+- `test/helper.ts` creates a test configuration which is passed to an app instance (bootstrapped with @fastify-cli/helper) which is then handed to a test suite.
 
 # Fastify CLI
 
