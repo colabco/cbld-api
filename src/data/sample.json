@@ -5,7 +5,10 @@
       "name": "Artemis",
       "description": "The Artemis program is a Moon exploration program led by NASA and its partners, including ESA, JAXA, DLR, ASI, ISA, and CSA. It was established in 2017 with the goal of establishing a permanent base on the Moon to facilitate human missions to Mars",
       "approxDuration": "3 months",
-      "formedFromInterestGroup": ["1","6"],
+      "formedFromInterestGroup": [
+        "1",
+        "6"
+      ],
       "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     },
@@ -14,7 +17,10 @@
       "name": "Apollo",
       "description": "Project Apollo was a comprehensive space program led by NASA and the United States government, aimed at achieving the goal of landing a man on the moon and returning him safely to Earth before the end of the 1960s",
       "approxDuration": "5 months",
-      "formedFromInterestGroup": ["2","5"],
+      "formedFromInterestGroup": [
+        "2",
+        "5"
+      ],
       "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     },
@@ -23,7 +29,10 @@
       "name": "Rocket to Mars",
       "description": "We are going to Mars! is the fourth planet from the Sun and is the second-smallest planet in the Solar System, being larger than only Mercury. In the English language, Mars is named for the Roman god of war.",
       "approxDuration": "10 years",
-      "formedFromInterestGroup": ["3","4"],
+      "formedFromInterestGroup": [
+        "3",
+        "4"
+      ],
       "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     }
@@ -34,10 +43,20 @@
       "username": "John Doe",
       "email": "john@doe.com",
       "appRole": "admin",
-      "projectsOwned": ["1"],
-      "isMemberOfProjects": ["1"],
-      "targetIndustryRoles": ["CTO", "Lead Engineer"],
-      "isMemberOfInterestGroups" :["1","2"],
+      "projectsOwned": [
+        "1"
+      ],
+      "isMemberOfProjects": [
+        "1"
+      ],
+      "targetIndustryRoles": [
+        "CTO",
+        "Lead Engineer"
+      ],
+      "isMemberOfInterestGroups": [
+        "1",
+        "2"
+      ],
       "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     },
@@ -47,9 +66,17 @@
       "email": "jane@smith.com",
       "appRole": "user",
       "projectsOwned": [],
-      "isMemberOfProjects": ["1", "2"],
-      "targetIndustryRoles": ["2"],
-      "isMemberOfInterestGroups" :["3","4"],
+      "isMemberOfProjects": [
+        "1",
+        "2"
+      ],
+      "targetIndustryRoles": [
+        "2"
+      ],
+      "isMemberOfInterestGroups": [
+        "3",
+        "4"
+      ],
       "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     },
@@ -58,10 +85,22 @@
       "name": "Bob Johnson",
       "email": "bob@johnson.com",
       "appRole": "user",
-      "projectsOwned": ["2", "3"],
-      "isMemberOfProjects": ["2", "3"],
-      "targetIndustryRoles": ["3", "4"],
-      "isMemberOfInterestGroups" :["1","5"],
+      "projectsOwned": [
+        "2",
+        "3"
+      ],
+      "isMemberOfProjects": [
+        "2",
+        "3"
+      ],
+      "targetIndustryRoles": [
+        "3",
+        "4"
+      ],
+      "isMemberOfInterestGroups": [
+        "1",
+        "5"
+      ],
       "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     },
@@ -71,9 +110,17 @@
       "email": "alice@williams.com",
       "appRole": "user",
       "projectsOwned": [],
-      "isMemberOfProjects": ["3"],
-      "targetIndustryRoles": ["10", "11"],
-      "isMemberOfInterestGroups" :["5","6"],
+      "isMemberOfProjects": [
+        "3"
+      ],
+      "targetIndustryRoles": [
+        "10",
+        "11"
+      ],
+      "isMemberOfInterestGroups": [
+        "5",
+        "6"
+      ],
       "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     },
@@ -83,19 +130,28 @@
       "email": "charlie@brown.com",
       "appRole": "user",
       "projectsOwned": [],
-      "isMemberOfProjects": ["1"],
-      "targetIndustryRoles": ["12"],
-      "isMemberOfInterestGroups" :["4"],
+      "isMemberOfProjects": [
+        "1"
+      ],
+      "targetIndustryRoles": [
+        "12"
+      ],
+      "isMemberOfInterestGroups": [
+        "4"
+      ],
       "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     }
   ],
-  "IndustryRoles": [
+  "industryRoles": [
     {
       "id": "1",
       "name": "CTO",
       "description": "Chief Technology Officer",
-      "coreSkills": ["1", "2"],
+      "coreSkills": [
+        "1",
+        "2"
+      ],
       "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     },
@@ -103,7 +159,11 @@
       "id": "2",
       "name": "QA Analyst",
       "description": "Assure the quality of delivered solutions",
-      "coreSkills": ["3", "6", "11"],
+      "coreSkills": [
+        "3",
+        "6",
+        "11"
+      ],
       "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     },
@@ -111,7 +171,12 @@
       "id": "3",
       "name": "Lead Engineer",
       "description": "Leading engineering teams to success",
-      "coreSkills": ["3", "5", "7", "8"],
+      "coreSkills": [
+        "3",
+        "5",
+        "7",
+        "8"
+      ],
       "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     },
@@ -119,7 +184,17 @@
       "id": "4",
       "name": "Fullstack Developer",
       "description": "Implementation of all tiers of application software",
-      "coreSkills": ["3", "4", "5", "6", "7", "8",  "9", "10", "11"],
+      "coreSkills": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
       "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     },
@@ -127,7 +202,12 @@
       "id": "5",
       "name": "Frontend Developer",
       "description": "Implementation of user-facing applications",
-      "coreSkills": ["3", "4", "7", "8"],
+      "coreSkills": [
+        "3",
+        "4",
+        "7",
+        "8"
+      ],
       "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     },
@@ -135,7 +215,13 @@
       "id": "6",
       "name": "Backend Developer",
       "description": "Implementation of application backend resources & services",
-      "coreSkills": ["3", "5", "6", "7", "10"],
+      "coreSkills": [
+        "3",
+        "5",
+        "6",
+        "7",
+        "10"
+      ],
       "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     },
@@ -143,7 +229,14 @@
       "id": "8",
       "name": "Cloud DevOPs Engineer",
       "description": "Deployment & operation of application resources",
-      "coreSkills": ["3", "13", "14", "15", "16", "2"],
+      "coreSkills": [
+        "3",
+        "13",
+        "14",
+        "15",
+        "16",
+        "2"
+      ],
       "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     },
@@ -151,7 +244,11 @@
       "id": "9",
       "name": "Data Scientist",
       "description": "Answering business/organisational questions with data",
-      "coreSkills": ["3", "7", "8"],
+      "coreSkills": [
+        "3",
+        "7",
+        "8"
+      ],
       "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     },
@@ -159,7 +256,13 @@
       "id": "10",
       "name": "Data Engineer",
       "description": "Implementation of data ingestion, processing, and storage",
-      "coreSkills": ["3", "9", "10", "7", "11"],
+      "coreSkills": [
+        "3",
+        "9",
+        "10",
+        "7",
+        "11"
+      ],
       "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     },
@@ -167,7 +270,12 @@
       "id": "11",
       "name": "Machine Learning Engineer",
       "description": "Implementation of ML models & services",
-      "coreSkills": ["3", "19", "20", "7"],
+      "coreSkills": [
+        "3",
+        "19",
+        "20",
+        "7"
+      ],
       "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     },
@@ -175,117 +283,120 @@
       "id": "12",
       "name": "Product Manager",
       "description": "Product management & product-led decision making",
-      "coreSkills": ["3", "17", "18"],
+      "coreSkills": [
+        "3",
+        "17",
+        "18"
+      ],
       "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     }
   ],
-  "coreSkills":[
+  "coreSkills": [
     {
       "id": "1",
       "name": "Research & Innovation Management",
       "description": "Research & Innovation Management",
       "createdAt": "2023-06-15T08:45:00Z",
-      "updatedAt": "2023-06-18T10:20:00Z",
-      
+      "updatedAt": "2023-06-18T10:20:00Z"
     },
     {
       "id": "2",
       "name": "Cloud Architecture Design",
       "description": "Cloud Architecture Design",
-     "createdAt": "2023-06-15T08:45:00Z",
-     "updatedAt": "2023-06-18T10:20:00Z"
+      "createdAt": "2023-06-15T08:45:00Z",
+      "updatedAt": "2023-06-18T10:20:00Z"
     },
     {
       "id": "3",
       "name": "Task Planning & Management",
       "description": "Task Planning & Management",
-     "createdAt": "2023-06-15T08:45:00Z",
+      "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     },
     {
       "id": "4",
       "name": "Test Planning & Management",
       "description": "Test Planning & Management",
-     "createdAt": "2023-06-15T08:45:00Z",
-     "updatedAt": "2023-06-18T10:20:00Z"
+      "createdAt": "2023-06-15T08:45:00Z",
+      "updatedAt": "2023-06-18T10:20:00Z"
     },
     {
       "id": "5",
       "name": "Resource Planning & Management",
       "description": "Resource Planning & Management",
-     "createdAt": "2023-06-15T08:45:00Z",
+      "createdAt": "2023-06-15T08:45:00Z",
       "updatedAt": "2023-06-18T10:20:00Z"
     },
     {
       "id": "6",
       "name": "Issues Management",
       "description": "Issues Management",
-     "createdAt": "2023-06-15T08:45:00Z",
-    "updatedAt": "2023-06-18T10:20:00Z"
+      "createdAt": "2023-06-15T08:45:00Z",
+      "updatedAt": "2023-06-18T10:20:00Z"
     },
     {
       "id": "7",
       "name": "Data Querying & Analysis",
       "description": "Data Querying & Analysis",
-     "createdAt": "2023-06-15T08:45:00Z",
-    "updatedAt": "2023-06-18T10:20:00Z"
+      "createdAt": "2023-06-15T08:45:00Z",
+      "updatedAt": "2023-06-18T10:20:00Z"
     },
     {
       "id": "8",
       "name": "Data Visualization & Reporting",
       "description": "Data Visualization & Reporting",
-     "createdAt": "2023-06-15T08:45:00Z",
-    "updatedAt": "2023-06-18T10:20:00Z"
+      "createdAt": "2023-06-15T08:45:00Z",
+      "updatedAt": "2023-06-18T10:20:00Z"
     },
     {
       "id": "9",
       "name": "Data Processing & Stream Processing",
       "description": "Data Processing & Stream Processing",
-     "createdAt": "2023-06-15T08:45:00Z",
-    "updatedAt": "2023-06-18T10:20:00Z"
+      "createdAt": "2023-06-15T08:45:00Z",
+      "updatedAt": "2023-06-18T10:20:00Z"
     },
     {
       "id": "10",
       "name": "Data Storage",
       "description": "Data Storage",
-     "createdAt": "2023-06-15T08:45:00Z",
-    "updatedAt": "2023-06-18T10:20:00Z"
+      "createdAt": "2023-06-15T08:45:00Z",
+      "updatedAt": "2023-06-18T10:20:00Z"
     },
     {
       "id": "11",
       "name": "Data Modeling",
       "description": "Data Modeling",
-     "createdAt": "2023-06-15T08:45:00Z",
-    "updatedAt": "2023-06-18T10:20:00Z"
+      "createdAt": "2023-06-15T08:45:00Z",
+      "updatedAt": "2023-06-18T10:20:00Z"
     },
     {
       "id": "12",
       "name": "Database Access Layer Implementation",
       "description": "Database Access Layer Implementation",
-     "createdAt": "2023-06-15T08:45:00Z",
-    "updatedAt": "2023-06-18T10:20:00Z"
+      "createdAt": "2023-06-15T08:45:00Z",
+      "updatedAt": "2023-06-18T10:20:00Z"
     },
     {
       "id": "13",
       "name": "CI/CD Pipeline Implementation",
       "description": "CI/CD Pipeline Implementation",
-     "createdAt": "2023-06-15T08:45:00Z",
-    "updatedAt": "2023-06-18T10:20:00Z"
+      "createdAt": "2023-06-15T08:45:00Z",
+      "updatedAt": "2023-06-18T10:20:00Z"
     },
     {
       "id": "14",
       "name": "Cloud Infrastructure & Services Provisioning",
       "description": "Cloud Infrastructure & Services Provisioning",
-     "createdAt": "2023-06-15T08:45:00Z",
-    "updatedAt": "2023-06-18T10:20:00Z"
+      "createdAt": "2023-06-15T08:45:00Z",
+      "updatedAt": "2023-06-18T10:20:00Z"
     },
     {
       "id": "15",
       "name": "Backup & Recovery Procedures",
       "description": "Backup & Recovery Procedures",
-     "createdAt": "2023-06-15T08:45:00Z",
-    "updatedAt": "2023-06-18T10:20:00Z"
+      "createdAt": "2023-06-15T08:45:00Z",
+      "updatedAt": "2023-06-18T10:20:00Z"
     },
     {
       "id": "16",
@@ -312,106 +423,82 @@
       "id": "19",
       "name": "Machine Learning",
       "description": "Machine Learning",
-     "createdAt": "2023-06-15T08:45:00Z",
-    "updatedAt": "2023-06-18T10:20:00Z"
+      "createdAt": "2023-06-15T08:45:00Z",
+      "updatedAt": "2023-06-18T10:20:00Z"
     },
-    
     {
       "id": "20",
       "name": "Deep Learning",
       "description": "Deep Learning",
-     "createdAt": "2023-06-15T08:45:00Z",
-    "updatedAt": "2023-06-18T10:20:00Z"
+      "createdAt": "2023-06-15T08:45:00Z",
+      "updatedAt": "2023-06-18T10:20:00Z"
     }
   ],
-  
-    "interestGroups": [
-      {
-        "id": "1",
-        "name": "Machine Learning & AI",
-        "description": "Interest group focused on Machine Learning and Artificial Intelligence technologies.",
-        "createdAt": "2024-04-11T12:00:00Z",
-        "updatedAt": "2024-04-11T12:00:00Z"
-      },
-      {
-        "id": "2",
-        "name": "Infrastructure, DevOps & Cloud Engineering",
-        "description": "Interest group covering Infrastructure, DevOps practices, and Cloud Engineering solutions.",
-        "createdAt": "2024-04-11T12:00:00Z",
-        "updatedAt": "2024-04-11T12:00:00Z"
-      },
-      {
-        "id": "3",
-        "name": "Data Science & Data Engineering",
-        "description": "Interest group dedicated to Data Science and Data Engineering disciplines.",
-        "createdAt": "2024-04-11T12:00:00Z",
-        "updatedAt": "2024-04-11T12:00:00Z"
-      },
-      {
-        "id": "4",
-        "name": "Database Architecture & Data Modeling",
-        "description": "Interest group focusing on Database Architecture and Data Modeling techniques.",
-        "createdAt": "2024-04-11T12:00:00Z",
-        "updatedAt": "2024-04-11T12:00:00Z"
-      },
-      {
-        "id": "5",
-        "name": "Graphic Design & Corporate Identity",
-        "description": "Interest group centered around Graphic Design principles and Corporate Identity strategies.",
-        "createdAt": "2024-04-11T12:00:00Z",
-        "updatedAt": "2024-04-11T12:00:00Z"
-      },
-      {
-        "id": "6",
-        "name": "User Interface Design & Experience Design",
-        "description": "Interest group specializing in User Interface Design and User Experience Design methodologies.",
-        "createdAt": "2024-04-11T12:00:00Z",
-        "updatedAt": "2024-04-11T12:00:00Z"
-      }
-    ],
-    "messages": [
-      {
-        "id": "1",
-        "sender": "1",
-        "interestGroups": "1",
-        "content": "Hello everyone! Let's discuss latest trends in ML & AI.",
-        "createdAt": "2024-04-11T12:00:00Z"
-      },
-      {
-        "id": "2",
-        "sender": "2",
-        "interestGroups": "1",
-        "content": "Agreed! I'm particularly interested in natural language processing.",
-        "createdAt": "2024-04-11T12:05:00Z"
-      },
-      {
-        "id": "3",
-        "sender": "3",
-        "interestGroups": "2",
-        "content": "Hey folks! Anyone working on Kubernetes deployments?",
-        "createdAt": "2024-04-11T12:10:00Z"
-      }
-    ]
+  "interestGroups": [
+    {
+      "id": "1",
+      "name": "Machine Learning & AI",
+      "description": "Interest group focused on Machine Learning and Artificial Intelligence technologies.",
+      "createdAt": "2024-04-11T12:00:00Z",
+      "updatedAt": "2024-04-11T12:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Infrastructure, DevOps & Cloud Engineering",
+      "description": "Interest group covering Infrastructure, DevOps practices, and Cloud Engineering solutions.",
+      "createdAt": "2024-04-11T12:00:00Z",
+      "updatedAt": "2024-04-11T12:00:00Z"
+    },
+    {
+      "id": "3",
+      "name": "Data Science & Data Engineering",
+      "description": "Interest group dedicated to Data Science and Data Engineering disciplines.",
+      "createdAt": "2024-04-11T12:00:00Z",
+      "updatedAt": "2024-04-11T12:00:00Z"
+    },
+    {
+      "id": "4",
+      "name": "Database Architecture & Data Modeling",
+      "description": "Interest group focusing on Database Architecture and Data Modeling techniques.",
+      "createdAt": "2024-04-11T12:00:00Z",
+      "updatedAt": "2024-04-11T12:00:00Z"
+    },
+    {
+      "id": "5",
+      "name": "Graphic Design & Corporate Identity",
+      "description": "Interest group centered around Graphic Design principles and Corporate Identity strategies.",
+      "createdAt": "2024-04-11T12:00:00Z",
+      "updatedAt": "2024-04-11T12:00:00Z"
+    },
+    {
+      "id": "6",
+      "name": "User Interface Design & Experience Design",
+      "description": "Interest group specializing in User Interface Design and User Experience Design methodologies.",
+      "createdAt": "2024-04-11T12:00:00Z",
+      "updatedAt": "2024-04-11T12:00:00Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "1",
+      "sender": "1",
+      "interestGroups": "1",
+      "content": "Hello everyone! Let's discuss latest trends in ML & AI.",
+      "createdAt": "2024-04-11T12:00:00Z"
+    },
+    {
+      "id": "2",
+      "sender": "2",
+      "interestGroups": "1",
+      "content": "Agreed! I'm particularly interested in natural language processing.",
+      "createdAt": "2024-04-11T12:05:00Z"
+    },
+    {
+      "id": "3",
+      "sender": "3",
+      "interestGroups": "2",
+      "content": "Hey folks! Anyone working on Kubernetes deployments?",
+      "createdAt": "2024-04-11T12:10:00Z"
+    }
+  ]
 }
-  
-//   "coreSkills": [
-//     "Research & Innovation Management",
-//     "Cloud Architecture Design",
-//     "Task Planning & Management",
-//     "Test Planning & Management",
-//     "Resource Planning & Management",
-//     "Issues Management",
-//     "Data Querying & Analysis",
-//     "Data Visualization & Reporting",
-//     "Data Processing & Stream Processing",
-//     "Data Storage",
-//     "Data Modeling",
-//     "Database Access Layer Implementation",
-//     "CI/CD Pipeline Implementation",
-//     "Cloud Infrastructure & Services Provisioning",
-//     "Backup & Recovery Procedures",
-//     "Security Procedures",
-//     "Product Features Management & Roadmapping",
-//     "Product Testing & Feedback Management"
-//   ]
-// }

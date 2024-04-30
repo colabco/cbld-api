@@ -2,6 +2,15 @@ import { join } from 'path'
 import AutoLoad, { AutoloadPluginOptions } from '@fastify/autoload'
 import { FastifyPluginAsync, FastifyServerOptions } from 'fastify'
 
+// PLACEHOLDER TODO: application context
+// declare module 'fastify' {
+//   interface FastifyInstance {
+//     config: {
+//       DATABASE_URL: string
+//     }
+//   }
+// }
+
 export interface AppOptions extends FastifyServerOptions, Partial<AutoloadPluginOptions> {}
 // Pass --options via CLI arguments in command to enable these options.
 const options: AppOptions = {}
@@ -34,6 +43,10 @@ const app: FastifyPluginAsync<AppOptions> = async (fastify, opts): Promise<void>
     configuration: {
       spec: () => (fastify as any).swagger(),
     },
+  })
+
+  void fastify.setNotFoundHandler((_request, reply) => {
+    reply.code(404).type('text/html').send('Not Found')
   })
 
   // Do not touch the following lines

@@ -2,19 +2,19 @@
   "name": "cbld-api",
   "version": "1.0.0",
   "description": "API service for co:builders",
-  "main": "app.ts",
+  "main": "dist/server.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "clean": "rm -rf dist",
-    "test": "npm run build && tsc -p test/tsconfig.json && c8 node --test -r ts-node/register test/**/*.ts",
-    "start": "npm run build && fastify start -l info dist/app.js",
-    "copy": "cp -r src/api-specs/ dist/api-specs/",
-    "build": "npm run copy && tsc",
-    "watch:ts": "tsc -w",
-    "dev": "npm run build && concurrently -k -p \"[{name}]\" -n \"TypeScript,App\" -c \"yellow.bold,cyan.bold\" \"npm:watch:ts\" \"fastify start -l info dist/app.js\"",
-    "dev:start": "fastify start --ignore-watch=.ts$ -w -l info -P dist/app.js",
+    "test": "pnpm run build && tsc -p test/tsconfig.json && c8 node --test -r ts-node/register \"test/**/*.ts\"",
+    "copy": "mkdir -p dist/api-specs && cp -r src/api-specs/* dist/api-specs/",
+    "build": "pnpm run copy && tsc",
+    "build:dev": "pnpm run copy && tsc --incremental",
+    "start": "node dist/server.js || exit 1",
+    "watch": "tsc -w",
+    "dev": "nodemon -e yaml,ts,json -w src --exec 'pnpm run build:dev && pnpm run start'",
     "routes": "fastify print-routes -P dist/app.js"
   },
   "keywords": [],
@@ -25,6 +25,7 @@
     "@fastify/sensible": "^5.0.0",
     "@fastify/swagger": "^8.14.0",
     "@scalar/fastify-api-reference": "^1.20.27",
+    "dotenv": "^16.4.5",
     "fastify": "^4.26.1",
     "fastify-cli": "^6.1.1",
     "fastify-plugin": "^4.0.0"
@@ -34,6 +35,7 @@
     "c8": "^9.0.0",
     "concurrently": "^8.2.2",
     "fastify-tsconfig": "^2.0.0",
+    "nodemon": "^3.1.0",
     "ts-node": "^10.4.0",
     "typescript": "^5.2.2"
   }

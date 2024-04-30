@@ -1,41 +1,41 @@
 export interface Project {
-  id: string;
-  name: string;
-  description: string;
-  approxDuration: string;
+  id: string
+  name: string
+  description: string
+  approxDuration: string
 }
 
 export interface User {
-  id : string
-  username : string
-  email : string
+  id: string
+  username: string
+  email: string
   appRole: string
-  projectsOwned : string[]
-  isMemberOfProjects : string[]
-  targetIndustryRoles : string[]
+  projectsOwned: string[]
+  isMemberOfProjects: string[]
+  targetIndustryRoles: string[]
 }
 
-export interface ReqByProjectId  {
+export interface ReqByProjectId {
   Params: {
-    projectId: string;
+    projectId: string
   }
 }
 
-export interface ReqByUserId  {
+export interface ReqByUserId {
   Params: {
-    userId: string;
+    userId: string
   }
 }
 
 export interface ResProject {
-  project: Project | undefined;
+  project: Project | null
 }
 
 export interface ResProjectList {
-  projects: Project[];
+  projects: Project[]
 }
 
 export interface SampleData {
-  projects: Project[];
-  users: User[];
+  projects: Project[]
+  users: User[]
 }

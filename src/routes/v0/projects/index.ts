@@ -6,30 +6,33 @@ import type { ReqByProjectId, ReqByUserId, ResProject, ResProjectList, SampleDat
 const data: SampleData = JSON.parse(fs.readFileSync('src/data/sample.json', 'utf8'))
 
 const getProjects = async (_req: FastifyRequest, _resp: FastifyReply): Promise<ResProjectList> => {
-  return { projects: data.projects }
+  return { projects: data.projects || [] }
 }
 
 const getProjectById = async (req: FastifyRequest<ReqByProjectId>, _resp: FastifyReply): Promise<ResProject> => {
   const { projectId } = req.params
-  return { project: data.projects.find(project => project.id === projectId) }
+  const project = data.projects.find((project) => project.id === projectId) || null
+  return { project }
 }
 
 const getProjectsOwnedByUser = async (req: FastifyRequest<ReqByUserId>, _resp: FastifyReply): Promise<ResProjectList> => {
   const { userId } = req.params
-  const targetUser = data.users.find(user => user.id === userId)
+  const targetUser = data.users.find((user) => user.id === userId)
   if (!targetUser) {
     throw new Error('User not found')
   }
-  return { projects: data.projects.filter(project => targetUser.projectsOwned.includes(project.id)) }
+  const projects = data.projects.filter((project) => targetUser.projectsOwned.includes(project.id)) || []
+  return { projects }
 }
 
 const getProjectsWithMember = async (req: FastifyRequest<ReqByUserId>, _resp: FastifyReply): Promise<ResProjectList> => {
   const { userId } = req.params
-  const targetUser = data.users.find(user => user.id === userId)
+  const targetUser = data.users.find((user) => user.id === userId)
   if (!targetUser) {
     throw new Error('User not found')
   }
-  return { projects: data.projects.filter(project => targetUser.isMemberOfProjects.includes(project.id)) }
+  const projects = data.projects.filter((project) => targetUser.isMemberOfProjects.includes(project.id)) || []
+  return { projects }
 }
 
 const projectsPlugin: FastifyPluginAsync = async (fastify, opts): Promise<void> => {
