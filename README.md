@@ -20,6 +20,16 @@ After cloning this repository:
 - run `pnpm build` to build the project for production
 - run `pnpm start` to start the server in production mode
 
+# Setting up the service with Heroku
+
+- Create an heroku account, visit - [Heroku Sign up](https://signup.heroku.com/) 
+- Intall the heroku CLI, use the link based on your operating system. [Install Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli). 
+- Once the the above steps has been completed, use the `heroku login` command to log into heroku vai the CLI.
+-  run the command to start the service locally via heroku `heroku local web --port 3000`
+-  Navigate to the `localhost:3000/v0/projects` route
+- To easily test the API use swagger UI via the route `localhost:3000/docs`
+
+Note that the steps above should be done after you have checked into the right branch. 
 # Development Cycle
 
 - create a local branch for the ticket you are working on. **All tasks must have a corresponding ticket.**:
